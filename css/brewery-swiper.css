@@ -1,0 +1,68 @@
+/* SwiperJS CDN for brewery logos swiper */
+@media (max-width: 700px) {
+  .brewery-logos-grid { display: none !important; }
+  .brewery-logos-swiper { display: block !important; }
+}
+@media (min-width: 701px) {
+  .brewery-logos-swiper { display: none !important; }
+}
+
+.brewery-logos-swiper {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 2rem auto;
+  display: none;
+  position: relative;
+  padding-bottom: 40px; /* Add space for pagination */
+}
+.brewery-logos-swiper .swiper-pagination {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+.brewery-logos-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+.brewery-logos-swiper .brewery-logo img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  background: transparent; /* Remove white background */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 8px;
+}
+
+@media (max-width: 700px) {
+  .brewery-logos-swiper {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto 2rem auto;
+    display: block;
+    position: relative;
+    padding-bottom: 60px; /* More space for pagination */
+  }
+  .brewery-logos-swiper .swiper-slide {
+    height: 420px; /* More height for bigger logos and spacing */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Move logos up */
+    padding-top: 10px;
+  }
+  .brewery-logos-swiper .brewery-logo img {
+    width: 340px;
+    height: 340px;
+    max-width: 100%;
+    max-height: 340px;
+    margin: 0 auto;
+    display: block;
+    padding: 8px;
+  }
+}

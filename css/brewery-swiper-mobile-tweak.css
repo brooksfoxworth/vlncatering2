@@ -1,0 +1,24 @@
+@media (max-width: 700px) {
+  /* Reduce dead space above and below the brewery swiper on mobile */
+  .brewery-partners-section {
+    padding-top: 24px !important;
+    padding-bottom: 16px !important;
+  }
+  .brewery-logos-swiper {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 24px !important;
+  }
+  .brewery-logos-swiper .swiper-slide {
+    height: 200px !important;
+    padding-top: 0 !important;
+    align-items: center !important;
+  }
+  .brewery-logos-swiper .brewery-logo img {
+    height: 120px !important;
+    width: 120px !important;
+    max-height: 120px !important;
+    max-width: 120px !important;
+    padding: 4px !important;
+  }
+}
